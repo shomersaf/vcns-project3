@@ -1,0 +1,501 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Gruppo&family=IBM+Plex+Sans+Hebrew:wght@100;200;300;400;500;600;700&family=Roboto:wght@100&family=Rock+Salt&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: inherit;
+}
+a:hover {
+  cursor: pointer;
+}
+body {
+  background: #b4eff6;
+  color: #000;
+  min-width: fit-content;
+
+  /* font-family: 'Abel', sans-serif; */
+  font-family: "Bellota Text", cursive;
+  /* font-family: 'Gruppo', sans-serif; */
+  /* font-family: 'IBM Plex Sans Hebrew', sans-serif; */
+  /* font-family: 'Roboto', sans-serif; */
+  /* font-family: 'Rock Salt', cursive; */
+  border: none;
+  outline: none;
+}
+header {
+  /* background: #33ffff; */
+  background: transparent;
+  max-height: fit-content;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 100px;
+  margin: auto;
+}
+h1 {
+  text-transform: capitalize;
+  font-family: "Rock Salt", cursive;
+  color: rgb(23, 107, 180);
+  text-wrap: nowrap;
+}
+footer {
+  /* opacity: 0.4; */
+  background: #09987c;
+  height: 45px;
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fefffe;
+  /* border-top-right-radius: 50%;
+  border-top-left-radius: 50%; */
+}
+main {
+  background: #b4eff6;
+  margin-bottom: 100px;
+  min-height: 100vh;
+  width: 100%;
+
+  background-image: url("./assets/img/waves.svg");
+  background-position: top;
+  background-repeat: repeat-x;
+  background-size: 100% auto;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+nav a {
+  font-size: large;
+  padding-left: 10px;
+  font-weight: bold;
+}
+nav a:first-child {
+  padding-left: 0px;
+}
+
+nav {
+  text-align: center;
+}
+h3 {
+  text-transform: capitalize;
+}
+.card img, form img  .mycard img, form img {
+  object-fit: cover;
+  width: 500px;
+  min-height: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+form img {
+  margin-top: 20px;
+}
+.card {
+  width: 300px;
+  overflow: hidden;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  /* margin: 10px; */
+}
+.cards {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: space-evenly;
+}
+.dislike {
+  color: rgb(222, 189, 196);
+  font-size: 28px;
+  /* cursor: pointer; */
+}
+.like {
+  color: rgb(194, 54, 84);
+  font-size: 28px;
+  /* cursor: pointer; */
+}
+.likeDiv {
+  display: flex;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 15px;
+  line-height: 30px;
+  margin-left:15px;
+}
+.likeDiv div{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 50px;
+}
+
+.likeDiv button{
+  width: 80px;
+  margin: 0;
+  margin-left: 10px;
+}
+
+
+.likes {
+  margin-left: 10px;
+  color: crimson;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "Gruppo", sans-serif;
+}
+
+.card h3 {
+  margin-top: 10px;
+  font-weight: bold;
+  font-family: "IBM Plex Sans Hebrew", sans-serif;
+}
+.date span {
+  font-weight: bold;
+  font-family: "IBM Plex Sans Hebrew", sans-serif;
+}
+.date {
+  margin-top: 10px;
+}
+.cardFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+}
+.price {
+  font-weight: bold;
+  color: royalblue;
+  font-size: 22px;
+  margin-left: 10px;
+  /* font-family: 'Abel', sans-serif; */
+  /* font-family: 'Bellota Text', cursive; */
+  /* font-family: 'Gruppo', sans-serif; */
+  /* font-family: 'IBM Plex Sans Hebrew', sans-serif; */
+  font-family: "Roboto", sans-serif;
+  /* font-family: 'Rock Salt', cursive; */
+}
+.description {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.registration {
+  width: 600px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  padding-bottom: 30px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 20px;
+  margin: 50px auto;
+}
+.login {
+  width: 600px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  padding-bottom: 30px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 20px;
+  margin: 50px auto;
+}
+form {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  flex-direction: column;
+}
+form input {
+  width: 580px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid white;
+  margin-top: 10px;
+  outline: none;
+  padding-left: 10px;
+}
+textarea {
+  width: 580px;
+  height: 80px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid white;
+  margin-top: 10px;
+  outline: none;
+  padding-left: 10px;
+}
+form input:focus,
+form input:active,
+textarea:active,
+textarea:focus {
+  background-color: #b0fcb8;
+}
+
+button {
+  width: fit-content;
+  padding: 10px 15px;
+  margin: 10px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  border: none;
+  background-color: #09987c;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.4);
+  color: #ffffff;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #077d65;
+}
+.buttons button:nth-of-type(2) {
+  background-color: rgb(29, 136, 230);
+}
+.buttons button:nth-of-type(2):hover {
+  background-color: rgb(23, 107, 180);
+}
+.registration a,
+.login a {
+  color: rgb(7, 113, 206);
+  font-weight: bold;
+  font-family: "IBM Plex Sans Hebrew", sans-serif;
+}
+.registration a:hover,
+.login a:hover {
+  text-decoration: underline;
+}
+.headline {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-family: "IBM Plex Sans Hebrew", sans-serif;
+}
+.loadingP {
+  color: rgb(7, 113, 206);
+  font-weight: bold;
+  font-family: "IBM Plex Sans Hebrew", sans-serif;
+}
+.errorP {
+  color: crimson;
+  font-weight: bold;
+  font-family: "IBM Plex Sans Hebrew", sans-serif;
+  text-align: center;
+}
+
+.actionsDiv {
+  display: flex;
+  width: 100px;
+  background-color: white;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 15px;
+  line-height: 30px;
+  margin-right: 5px;
+}
+.editS {
+  color: rgb(7, 113, 206);
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.editS:hover {
+  color: rgb(9, 77, 137);
+}
+.deleteS {
+  color: crimson;
+  font-size: 20px;
+  cursor: pointer;
+}
+.deleteS:hover {
+  color: rgb(165, 4, 36);
+}
+.graph{
+  width: 80%;
+  margin:100px auto;
+  text-align: center;
+}
+.brif{
+  width: fit-content;
+  margin: 20px auto;
+}
+.wrapper{
+  text-align: center;
+}
+form span{
+  font-weight: bold;
+  font-family: "IBM Plex Sans Hebrew", sans-serif;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.about{
+  margin-top: 10px;
+text-align: justify;
+}
+.editing form{
+align-items: start;
+
+}
+.editForm input{
+  width:inherit;
+  margin-left: 10px;
+}
+.destination{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.editForm textarea{
+  height: 160px;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+.dates{
+  display: flex;
+  width: 100%;
+  justify-content:stretch;
+}
+.fromDate{
+ display: flex;
+ flex-direction: column;
+ align-items: start;
+ margin-top: 20px;
+ width: 100%;
+}
+.newDate{
+display: flex;
+width: 100%;
+justify-content: start;
+align-items: center;
+}
+.currentDate{
+  font-family: "Bellota Text", cursive;
+}
+.priceInputDiv{
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+} 
+.priceInputDiv input{
+width: 30%;
+}
+.editForm img{
+  margin: 20px auto;
+}
+.imgRef{
+  width: 100%;
+  overflow-x:hidden;
+}
+.notfound{
+  width: 600px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 20px;
+  margin: 50px auto;
+
+}
+.notfound p{
+  font-size: 400px;
+  color: #99d2f5;
+ font-family: 'Gruppo', sans-serif;
+margin: 10px;
+line-height: 400px;
+}
+.notfound h2{
+margin-top: -250px;
+ font-family: 'Rock Salt', cursive;
+ padding-bottom: 200px;
+}
+.registrateDiv, .loginDiv{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.pageNum{
+min-width: 44px;
+height: fit-content;
+padding: 10px;
+margin: 10px;
+margin-bottom: 30px;
+border-radius: 50%;
+border: none;
+background-color: rgb(29, 136, 230);
+color: #ffffff;
+}
+.pagination{
+  width: fit-content;
+  display: flex;
+  margin: auto;
+  align-items: center;
+
+}
+.notation{
+  text-align: left;
+  padding-left: 20px;
+  font-size: small;
+}
+
+.filterForm{
+  background-color: #99d2f5;
+  opacity: 0.8;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+ position: fixed;
+ top:70px;
+ right:6%;
+ text-transform: uppercase;
+ border-radius: 10px;
+ border: 4px solid white;
+font-weight: bold;
+}
+.filterForm div input{
+  width: 80px;
+  padding:0;
+  margin:0;
+}
+.filterForm div{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
