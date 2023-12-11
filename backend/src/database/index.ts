@@ -11,4 +11,5 @@ const pool = mysql2.createPool({
     database: 'project3',
 });
 
+
 export { pool }
